@@ -1,11 +1,14 @@
-body{position: relative;
+
+/* page one */
+
+.body{position: relative;
     background-image: URL(./four.webp);
     background-size: 100%;
     background-repeat: no-repeat;
 
 
 }
-.enter-market{
+.enter-store{
    position: relative;
    left: 8em;
    top: 1em;
@@ -14,7 +17,7 @@ body{position: relative;
    text-align: center;
    color: black;
    z-index: 100;
-   animation-name: example;
+   animation-name: storeBackground;
    animation-duration: 4s;
    display: inline-block;
    animation-iteration-count: infinite;
@@ -23,7 +26,7 @@ body{position: relative;
 }
 
 
-.enter-market-div{
+.enter-store-div{
     position: absolute;
     top:11em;
     left: 23em;
@@ -31,14 +34,15 @@ body{position: relative;
 }
 /* background color should change for 50% of the time */
 /* at 2s, the animation will complete and start going back to normal and complete at 4s */
-@keyframes example {
+@keyframes storeBackground {
     50% {background-color: goldenrod;
-        color: rgb(110, 110, 110);}
+        color: rgb(110, 110, 110);};
     } 
 
   
-.enter-market:hover{
-    background-color: goldenrod;
+.enter-store:hover{
+background-color: goldenrod;
+
     border-radius: 2em;
 
 }
@@ -66,23 +70,65 @@ z-index: 10;
 .company-name:hover{
 color:black;
 }
-.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover{
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover{
 color:black;
 }
 
-.Karo{
+.karoDescription{
     position:absolute;
     top: 4em;
     left: 54em;
-
-
 }
+
 .Karo-child{
     font-size: 1.5em;
     font-weight: bold;
     font-style: oblique;
     color: rgb(110, 110, 110);
 }
+
+
+/* page one mobile */
+@media(max-width:600px){
+    .body{
+        background-color: rgb(255, 195, 44);
+
+}
+
+   
+.enter-store-div{
+    position: absolute;
+    top:2em;
+    left: -5em;
+}
+
+.karoDescription{
+    width: 1em;
+    position:absolute;
+    top: 9em;
+    left: 0em;
+}
+
+.company-name{
+    position:absolute;
+    top: 0.5em;
+    left: 1.9em;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+}
+
+.enter-image{
+    display: none;
+}
+
+.Karo-child>p{
+    color: black;
+    
+}
+}
+
+
 
 /* page two */
 .individualContent{
