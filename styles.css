@@ -1,0 +1,110 @@
+body{position: relative;
+    background-image: URL(./four.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+}
+.enter-market{
+   position: relative;
+   left: 8em;
+   top: 1em;
+   font-size: 2em;
+   font-weight: bolder;
+   text-align: center;
+   color: black;
+   z-index: 100;
+   animation-name: example;
+   animation-duration: 4s;
+   display: inline-block;
+   animation-iteration-count: infinite;
+   animation-duration: 4s;
+   border-radius: 10em;
+}
+
+
+.enter-market-div{
+    position: absolute;
+    top:11em;
+    left: 23em;
+
+}
+/* background color should change for 50% of the time */
+/* at 2s, the animation will complete and start going back to normal and complete at 4s */
+@keyframes example {
+    50% {background-color: goldenrod;
+        color: rgb(110, 110, 110);}
+    } 
+
+  
+.enter-market:hover{
+    background-color: goldenrod;
+    border-radius: 2em;
+
+}
+.enter-image{
+    width: 25em;
+    border-radius: 13em;
+    opacity: 0.5;
+}
+
+.company-name{
+    position:absolute;
+    top: 1em;
+    left: 6.3em;
+    font-size: 4em;
+    font-weight: bold;
+    border: none;
+    color: rgb(110, 110, 110);
+z-index: 10;
+    padding-left: 1em;
+    border-radius: 0.3em;
+
+
+}
+
+.company-name:hover{
+color:black;
+}
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover{
+color:black;
+}
+
+.Karo{
+    position:absolute;
+    top: 4em;
+    left: 54em;
+
+
+}
+.Karo-child{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: oblique;
+    color: rgb(110, 110, 110);
+}
+
+/* page two */
+.individualContent{
+    border: solid;
+    overflow-y: scroll;
+}
+
+
+.content{
+    background-color:goldenrod;
+    display: inline;
+}
+.imageDiv{
+    height: 70%
+}
+
+.textDiv{
+    color: white;
+    font-weight: bold;
+}
+
+.inputBar{
+background-color: brown;
+display: block;
+}
